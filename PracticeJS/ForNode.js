@@ -20,3 +20,15 @@ function myFunction() {
 }*/
 
 //Promises -> 
+let promise = new Promise((resolve, reject) => {
+    alert("Hello")
+    resolve(69)
+})
+
+console.log("hello 1")
+setTimeout(() => {
+    console.log("Hello 2")
+}, 2000);
+
+console.log("hello 3")
+console.log(promise)
