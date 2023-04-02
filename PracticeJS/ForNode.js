@@ -158,4 +158,5 @@ promise_al.then((value) => {
   console.log(value)
 })*/
 
-//Async awaits
+//Async awaits -> special syntax to work with promises
+
