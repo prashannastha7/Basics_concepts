@@ -106,3 +106,56 @@ r1.then(() => {
 */
 
 //Promises API
+/*  //only for resolve 
+let a1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("value 1");
+  },1000)
+})
+
+let a2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("value 1");
+  },2000)
+})
+
+let a3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("value 1");
+  },3000)
+})
+
+//let promise_all = Promise.all([a1,a2,a3]) //run all after 3 sec euta ma error aayo vaney kunaii run hudaina
+// let promise_all = Promise.race([a1,a2,a3]) //less time vako run huncha but error then no output
+let promise_all = Promise.resolve(("Hey"))
+promise_all.then((value) => {
+  console.log(value)
+})
+
+   // for reject 
+let b1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject(new error("error"))
+  },1000)
+})
+
+let b2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("value 2");
+  },2000)
+})
+
+let b3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("value 1");
+  },3000)
+})
+
+//let promise_al = Promise.allSettled([b1,b2,b3]) //run all after 3 sec euta ma error aayo vaney pani run huncha
+// let promise_al = Promise.any([b1,b2,b3]) // less time run but error then second less time
+let promise_al = Promise.reject(new error ("Hey"))
+promise_al.then((value) => {
+  console.log(value)
+})*/
+
+//Async awaits
