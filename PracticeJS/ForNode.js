@@ -159,4 +159,27 @@ promise_al.then((value) => {
 })*/
 
 //Async awaits -> special syntax to work with promises
+async function weather() {  
+   let KtmWeather = new Promise((resolve, reject) => {
+      setTimeout(() => {
+         resolve("22 Deg")
+      },1000)
+  })
+
+   let PkhrWeather = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("24 Deg")
+   }, 2000)
+  })
+
+  // KtmWeather.then(alert)
+  // PkhrWeather.then(alert)
+  let ktmW = await KtmWeather;
+  let pkhrW = await PkhrWeather;
+  return [ktmW, pkhrW]
+}
+
+console.log("welcome to weather control")
+let a = weather()
+console.log(a)
 
