@@ -199,10 +199,11 @@ main1()*/
 
 //Fetch API
    //it require two .then
-let p = fetch("https://goweather.herokuapp.com/weather/kathmandu")
+/*let p = fetch("https://goweather.herokuapp.com/weather/kathmandu")
 p.then((response) => {
   console.log(response.status)
   return response.json()
 }).then((value2) => {   
   console.log(value2)
 })
+*/
