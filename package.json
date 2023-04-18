@@ -1,0 +1,22 @@
+{
+  "name": "practise",
+  "version": "1.0.0",
+  "description": "Just for practise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashannastha7/Basics_concepts.git"
+  },
+  "author": "Prashanna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prashannastha7/Basics_concepts/issues"
+  },
+  "homepage": "https://github.com/prashannastha7/Basics_concepts#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
