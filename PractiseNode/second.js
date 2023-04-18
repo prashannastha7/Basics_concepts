@@ -4,5 +4,5 @@ transfer = {
     developer: true
 }
 
-console.log(exports, require, module, __filename, __dirname)
-export default transfer;
+//console.log(exports, require, module, __filename, __dirname)
+module.exports = transfer;

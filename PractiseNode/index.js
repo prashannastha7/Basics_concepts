@@ -1,3 +1,3 @@
-import transfer from "./second"; 
+const transfer = require("./second")
 
 console.log("Hello World", transfer)
