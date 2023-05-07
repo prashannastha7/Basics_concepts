@@ -1,0 +1,8 @@
+Numpy -> Numpy is the core library for scientific and numerical computing in python.It provides high performance multideimensional array object and tools for working with arrays. it main object
+is the multidimensional array. It is atable of elements(numbers) all of same type indexed by atuple of +ve int.Dimension area called axes.
+
+Numpy array than python list
+fast, convinent, less memory
+
+Pandas -> Pandas is a tool for data processing which helps in data analysis. It provies functions and methods to efficiently manipulate large datasets. Data structure: Series(one dimensional array),
+Data frame(two-dimensional array) Series can have any data type unlike numpy 
