@@ -9,3 +9,6 @@ $this and $that can't be used to determine value
 4 scalar types -> bool,int,float,string
 4 compound -> array, object, callable, iterable 
 2 special -> resource, null
+
+#for date:
+https://www.php.net/manual/en/datetime.format.php

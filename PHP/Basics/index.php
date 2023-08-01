@@ -34,9 +34,13 @@ function processMarks($marksArr){
 $ram = [34,98,45,12,98,93];
 $sumMarks = processMarks($ram);
 
-echo "Total marks of ram is $sumMarks";
+echo "Total marks of ram is $sumMarks <br>";
 ?>
 
-
+<!-- date -->
+<?php
+$date = date("d l D");
+echo "todays date is $date"
+?>
 
 
