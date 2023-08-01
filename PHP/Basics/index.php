@@ -2,7 +2,8 @@
 <?php
 $greeting = 'Hey';
 echo "Hello" . " Everyone <br> ";
-echo " $greeting Programmer";
+echo " $greeting Programmer <br> "; 
+echo (int) 3.22, "<br>";
 ?>
 
 <!-- array  -->
@@ -40,7 +41,20 @@ echo "Total marks of ram is $sumMarks <br>";
 <!-- date -->
 <?php
 $date = date("d l D");
-echo "todays date is $date"
+echo "todays date is $date <br>"
 ?>
+
+<?php
+//Associative Array
+$color = array("ram" => "red", "shyam" => "purple",
+ "krishna" => "blue", 69 => "yellow");
+
+echo $color["ram"] ;
+foreach ($color as $key => $value) {
+    echo "<br> Favorite color of $key is $value"; 
+}
+
+
+
 
 
