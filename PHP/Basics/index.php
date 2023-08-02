@@ -22,6 +22,20 @@ foreach ($friends as $value) {
 
 ?> 
 
+<!-- Function -->
+<?php
+function processMarks($marksArr){
+    $sum = 0;
+    foreach ($marksArr as $value) {
+        $sum = $sum + $value;
+    }
+    return $sum;   
+}
+$ram = [34,98,45,12,98,93];
+$sumMarks = processMarks($ram);
+
+echo "Total marks of ram is $sumMarks";
+?>
 
 
 
