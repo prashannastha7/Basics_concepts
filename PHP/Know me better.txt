@@ -1,0 +1,11 @@
+PHP-hypertext preprocessor scripting languages. Interpreter 
+Client -> Web server -> PHP Interpreter -> Databases or third party APIs
+
+In terminal: php index.php(file name) 
+$this and $that can't be used to determine value
+. is used to concentated
+
+#Data types
+4 scalar types -> bool,int,float,string
+4 compound -> array, object, callable, iterable 
+2 special -> resource, null
