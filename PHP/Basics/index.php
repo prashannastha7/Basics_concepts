@@ -77,6 +77,15 @@ else{
 $sql = "CREATE DATABASE Prashana";
 $result = mysqli_query($conn, $sql);
 
-
+//Check for the db creation
+if($result){
+    echo "The DB was created <br>";
+}
+else{    
+    echo "The DB wasn't created" . mysqli_connect_error();
+}
+echo "The result is ";
+echo var_dump($result);
+?>
 
 
