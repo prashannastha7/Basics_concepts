@@ -51,9 +51,31 @@ $color = array("ram" => "red", "shyam" => "purple",
 
 echo $color["ram"] ;
 foreach ($color as $key => $value) {
-    echo "<br> Favorite color of $key is $value"; 
+    echo "<br> Favorite color of $key is $value "; 
+}
+?>
+
+<?php
+// Connecting to the Database
+$servername = "localhost";
+$username = "root";
+$password ="";
+
+//Create connection
+$conn = mysqli_connect($servername, $username, $password);
+
+//Die if connection not successful
+if (!$conn){
+    die("Sorry failed to connect: " . mysqli_connect_error());
 }
 
+else{
+    echo"<br>Successfully connected <br>";
+}
+
+//Create a database
+$sql = "CREATE DATABASE Prashana";
+$result = mysqli_query($conn, $sql);
 
 
 
