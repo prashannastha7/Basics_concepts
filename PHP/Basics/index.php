@@ -60,9 +60,10 @@ foreach ($color as $key => $value) {
 $servername = "localhost";
 $username = "root";
 $password ="";
+$database = "Prashana";
 
 //Create connection
-$conn = mysqli_connect($servername, $username, $password);
+$conn = mysqli_connect($servername, $username, $password, $database);
 
 //Die if connection not successful
 if (!$conn){
@@ -74,7 +75,7 @@ else{
 }
 
 //Create a database
-$sql = "CREATE DATABASE Prashana";
+/*$sql = "CREATE DATABASE Prashana";
 $result = mysqli_query($conn, $sql);
 
 //Check for the db creation
@@ -87,5 +88,16 @@ else{
 echo "The result is ";
 echo var_dump($result);
 ?>
+*/
 
+//Create table 
+$sql = "CREATE TABLE `trip` ( `sno` INT(6) NOT NULL AUTO_INCREMENT ,  `name` VARCHAR(12) NOT NULL ,  `dest` VARCHAR(6) NOT NULL ,  PRIMARY KEY  (`sno`))";
+$result = mysqli_query($conn, $sql);
 
+//Check for the table creation
+if($result){
+    echo "The table was created <br>";
+}
+else{    
+    echo "The table wasn't created" . mysqli_connect_error();
+}
